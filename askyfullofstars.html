@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>A Sky Full Of Stars Lyrics</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Titillium+Web:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+     body{
+          background-color: bisque;
+     }
+     .btn{
+          width: 90px;
+          height: 30px;
+          left: 10px;
+          position: absolute;
+          margin-left: 10px;
+          top: 30px;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid bisque;
+          border-radius: 10px;
+     }
+     .btn::before{
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 500%;
+          background: conic-gradient(
+               #fd004c,
+               #fe9000,
+               #fff020,
+               #3edf4b,
+               #3363ff,
+               #b102b7,
+               #fd004c
+          );
+          left: -25%;
+          top: -80%;
+          animation: spin 2s infinite linear ;
+     }
+     .btn::after{
+          content: "Home";
+          position: absolute;
+          background: bisque;
+          height: 80%;
+          width: 90%;
+          left: 5%;
+          top: 10%;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 1000;
+          display: grid;
+          place-items: center;
+          border-radius: 5px;
+          
+     }
+     @keyframes spin{
+          100%{
+               transform: rotate(360deg);
+          }
+     }
+
+     .btn:hover{
+          transform: scale(110%);
+          transition: cubic-bezier(0.215, 0.610, 0.355, 1)ease-in-out;
+          box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, .7);
+     }
+     .btn1{
+          border-radius: 10px;
+          width: 90px;
+          height: 30px;
+          right: 10px;
+          position: absolute;
+          margin-right: 10px;
+          top: 30px;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid bisque;
+     }
+     .btn1::before{
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 500%;
+          background: conic-gradient(
+               #fd004c,
+               #fe9000,
+               #fff020,
+               #3edf4b,
+               #3363ff,
+               #b102b7,
+               #fd004c
+          );
+          left: -25%;
+          top: -80%;
+          animation: spinn 2s infinite linear ;
+     }
+     .btn1::after{
+          content: "Next";
+          border-radius: 5px;
+          position: absolute;
+          background: bisque;
+          height: 80%;
+          width: 90%;
+          left: 5%;
+          top: 10%;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 1000;
+          display: grid;
+          place-items: center;
+          
+     }
+     @keyframes spinn{
+          100%{
+               transform: rotate(-360deg);
+          }
+     }
+     .btn1:hover{
+          transform: scale(110%);
+          transition: cubic-bezier(0.215, 0.610, 0.355, 1)ease-in-out;
+          box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, .7);
+     }
+     
+     .judul{
+          text-align: center;
+          background-color: rgb(212, 178, 130);
+          background-color: burlywood;
+          color: white;
+          height: 100px;
+          width: 100%;
+          text-align: center;
+          font-weight: bold;
+          border-radius: 5px;
+          border-width: 2px;
+          border-style: solid;
+          margin-top:100px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin-bottom: 30px;
+          padding-top: 50px;
+     }
+
+     .b1{
+          color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 10px;
+          padding-top: 50px;
+          border-style: solid;
+          border-width: 2px;
+          border-bottom: none;
+          border-radius: 20px 20px 0 0;
+     }
+     .b2, .b3, .b4{color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 10px;
+          border-width: 2px;
+          border-style: solid;
+          border-bottom: none;
+          border-top: none;
+     }
+     .b5{
+          color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 50px;
+          border-style: solid;
+          border-width: 2px;
+          border-top: none;
+          border-radius: 0 0 20px 20px;
+     }
+     .sampul{
+          text-align: center;
+          border: 10px solid rgba(212, 178, 130, 1) ;
+          border-left: none;
+          border-right: none;
+          color: black;
+          padding: 10px 0;
+          font-family: 'Titillium Web', sans-serif;
+          font-weight: 700;
+          color: white;
+     }
+
+</style>
+<body>
+     <div type="button" class="btn" onclick="home()"></div>
+     <div type="button" class="btn1" onclick="adventureofalifetime()"></div>
+     <div class="header">
+          <h1 class="judul">A Sky Full Of Stars</h1>
+          
+     </div>
+     <div class="lyrics">
+          <h1 class="sampul">Lyrics Song</h1>
+          <p class="b1">'Cause you're a sky, 'cause you're a sky full of stars <br> I'm gonna give you my heart <br> 'Cause you're a sky, 'cause you're a sky full of stars <br>'Cause you light up the path </p>
+          <p class="b2">I don't care, go on and tear me apart <br> I don't care if you do, ooh-ooh, ooh <br> 'Cause in a sky, 'cause in a sky full of stars <br> I think I saw you</p>
+          <p class="b3">'Cause you're a sky, 'cause you're a sky full of stars <br> I wanna die in your arms, oh, oh-oh <br> 'Cause you get lighter the more it gets dark <br> I'm gonna give you my heart, oh </p>
+          <p class="b4">I don't care, go on and tear me apart <br> I don't care if you do, ooh-ooh, ooh <br> 'Cause in a sky, 'cause in sky full of stars <br> I think I see you <br> I think I see you</p>
+          <p class="b5">'Cause you're a sky, you're a sky full of stars <br> Such a heavenly view <br> You're such a heavenly view <br> Yeah, yeah, yeah, ooh</p>
+     </div>
+
+<script>
+     function home(){window.location="coldplay.html"}
+     function adventureofalifetime(){window.location="adventureofalifetime.html"};
+</script>
+</body>
+</html>

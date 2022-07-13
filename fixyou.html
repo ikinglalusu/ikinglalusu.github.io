@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Fix You Lyrics</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+     body{
+          background-color: bisque;
+     }
+     .btn{
+          width: 90px;
+          height: 30px;
+          left: 10px;
+          position: absolute;
+          margin-left: 10px;
+          top: 30px;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid bisque;
+          border-radius: 10px;
+     }
+     .btn::before{
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 500%;
+          background: conic-gradient(
+               #fd004c,
+               #fe9000,
+               #fff020,
+               #3edf4b,
+               #3363ff,
+               #b102b7,
+               #fd004c
+          );
+          left: -25%;
+          top: -80%;
+          animation: spin 2s infinite linear ;
+     }
+     .btn::after{
+          content: "Home";
+          position: absolute;
+          background: bisque;
+          height: 80%;
+          width: 90%;
+          left: 5%;
+          top: 10%;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 1000;
+          display: grid;
+          place-items: center;
+          border-radius: 5px;
+          
+     }
+     @keyframes spin{
+          100%{
+               transform: rotate(360deg);
+          }
+     }
+
+     .btn:hover{
+          transform: scale(110%);
+          transition: cubic-bezier(0.215, 0.610, 0.355, 1)ease-in-out;
+          box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, .7);
+     }
+     .btn1{
+          border-radius: 10px;
+          width: 90px;
+          height: 30px;
+          right: 10px;
+          position: absolute;
+          margin-right: 10px;
+          top: 30px;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid bisque;
+     }
+     .btn1::before{
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 500%;
+          background: conic-gradient(
+               #fd004c,
+               #fe9000,
+               #fff020,
+               #3edf4b,
+               #3363ff,
+               #b102b7,
+               #fd004c
+          );
+          left: -25%;
+          top: -80%;
+          animation: spinn 2s infinite linear ;
+     }
+     .btn1::after{
+          content: "Next";
+          border-radius: 5px;
+          position: absolute;
+          background: bisque;
+          height: 80%;
+          width: 90%;
+          left: 5%;
+          top: 10%;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 1000;
+          display: grid;
+          place-items: center;
+          
+     }
+     @keyframes spinn{
+          100%{
+               transform: rotate(-360deg);
+          }
+     }
+     .btn1:hover{
+          transform: scale(110%);
+          transition: cubic-bezier(0.215, 0.610, 0.355, 1)ease-in-out;
+          box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, .7);
+     }
+     .judul{
+          text-align: center;
+          background-color: rgb(212, 178, 130);
+          background-color: burlywood;
+          color: white;
+          height: 100px;
+          width: 100%;
+          text-align: center;
+          font-weight: bold;
+          border-radius: 5px;
+          border-width: 2px;
+          border-style: solid;
+          margin-top:100px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin-bottom: 30px;
+          padding-top: 50px;
+     }
+
+     .b1{
+          color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 10px;
+          padding-top: 50px;
+          border-style: solid;
+          border-width: 2px;
+          border-bottom: none;
+          border-radius: 20px 20px 0 0;
+     }
+     .b2, .b3, .b4, .b5, .b6, .b7{color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 10px;
+          border-width: 2px;
+          border-style: solid;
+          border-bottom: none;
+          border-top: none;
+     }
+     .b8{
+          color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 50px;
+          border-style: solid;
+          border-width: 2px;
+          border-top: none;
+          border-radius: 0 0 20px 20px;
+     }
+     .sampul{
+          text-align: center;
+          border: 10px solid rgba(212, 178, 130, 1) ;
+          border-left: none;
+          border-right: none;
+          color: black;
+          padding: 10px 0;
+          font-family: 'Titillium Web', sans-serif;
+          font-weight: 700;
+          color: white;
+     }
+</style>
+<body>
+     <div type="button" class="btn" onclick="home()"></div>
+     <div type="button" class="btn1" onclick="next()"></div>
+     <div class="header">
+          <h1 class="judul">Fix You</h1>
+     </div>
+     <div class="lyrics">
+          <h1 class="sampul">Lyrics Song</h1>
+          <p class="b1">When you try your best, but you don't succeed <br> When you get what you want, but not what you need <br> When you feel so tired, but you can't sleep <br> Stuck in reverse </p>
+          <p class="b2">And the tears come streaming down your face <br>When you lose something you can't replace<br>When you love someone, but it goes to waste<br>Could it be worse? </p>
+          <p class="b3">Lights will guide you home<br>And ignite your bones<br>And I will try to fix you</p>
+          <p class="b4">And high up above, or down below<br>When you're too in love to let it go<br>But if you never try, you'll never know <br>Just what you're worth</p>
+          <p class="b5">Lights will guide you home <br>And ignite your bones <br>And I will try to fix you</p>
+          <p class="b6">Tears stream down your face<br>When you lose something you cannot replace <br>Tears stream down your face, and I</p>
+          <p class="b7">Tears stream down your face<br>I promise you I will learn from my mistakes<br>Tears stream down your face, and I</p>
+          <p class="b8">Lights will guide you home <br>And ignite your bones <br>And I will try to fix you</p>
+     </div>
+<script>
+     function home(){window.location="coldplay.html"}
+     function next(){window.location="paradise.html"};
+</script>
+</body>
+</html>

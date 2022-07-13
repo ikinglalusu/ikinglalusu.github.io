@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Yellow Lyrics</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+     body{
+          background-color: bisque;
+     }
+     .btn{
+          width: 90px;
+          height: 30px;
+          left: 10px;
+          position: absolute;
+          margin-left: 10px;
+          top: 30px;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid bisque;
+          border-radius: 10px;
+     }
+     .btn::before{
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 500%;
+          background: conic-gradient(
+               #fd004c,
+               #fe9000,
+               #fff020,
+               #3edf4b,
+               #3363ff,
+               #b102b7,
+               #fd004c
+          );
+          left: -25%;
+          top: -80%;
+          animation: spin 2s infinite linear ;
+     }
+     .btn::after{
+          content: "Home";
+          position: absolute;
+          background: bisque;
+          height: 80%;
+          width: 90%;
+          left: 5%;
+          top: 10%;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 1000;
+          display: grid;
+          place-items: center;
+          border-radius: 5px;
+          
+     }
+     @keyframes spin{
+          100%{
+               transform: rotate(360deg);
+          }
+     }
+
+     .btn:hover{
+          transform: scale(110%);
+          transition: cubic-bezier(0.215, 0.610, 0.355, 1)ease-in-out;
+          box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, .7);
+     }
+     .btn1{
+          border-radius: 10px;
+          width: 90px;
+          height: 30px;
+          right: 10px;
+          position: absolute;
+          margin-right: 10px;
+          top: 30px;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid bisque;
+     }
+     .btn1::before{
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 500%;
+          background: conic-gradient(
+               #fd004c,
+               #fe9000,
+               #fff020,
+               #3edf4b,
+               #3363ff,
+               #b102b7,
+               #fd004c
+          );
+          left: -25%;
+          top: -80%;
+          animation: spinn 2s infinite linear ;
+     }
+     .btn1::after{
+          content: "Next";
+          border-radius: 5px;
+          position: absolute;
+          background: bisque;
+          height: 80%;
+          width: 90%;
+          left: 5%;
+          top: 10%;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 1000;
+          display: grid;
+          place-items: center;
+          
+     }
+     @keyframes spinn{
+          100%{
+               transform: rotate(-360deg);
+          }
+     }
+     .btn1:hover{
+          transform: scale(110%);
+          transition: cubic-bezier(0.215, 0.610, 0.355, 1)ease-in-out;
+          box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, .7);
+     }
+     .judul{
+          text-align: center;
+          background-color: rgb(212, 178, 130);
+          background-color: burlywood;
+          color: white;
+          height: 100px;
+          width: 100%;
+          text-align: center;
+          font-weight: bold;
+          border-radius: 5px;
+          border-width: 2px;
+          border-style: solid;
+          margin-top:100px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin-bottom: 500px;
+          padding-top: 50px;
+     }
+     .b1{
+          color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 10px;
+          padding-top: 50px;
+          border-style: solid;
+          border-width: 2px;
+          border-bottom: none;
+          border-radius: 20px 20px 0 0;
+     }
+     .b2, .b3, .b4, .b5, .b6, .b7, .b8{color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 10px;
+          border-width: 2px;
+          border-style: solid;
+          border-bottom: none;
+          border-top: none;
+     }
+     .b9{
+          color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 50px;
+          border-style: solid;
+          border-width: 2px;
+          border-top: none;
+          border-radius: 0 0 20px 20px;
+     }
+</style>
+<body>
+     <div type="button" class="btn" onclick="home()"></div>
+     <div type="button" class="btn1" onclick="next()"></div>
+     <div class="header">
+          <h1 class="judul">Yellow Lyrics Song</h1>
+     </div>
+     <div class="lyrics">
+          <p class="b1">Look at the stars<br> Look how they shine for you <br> And everything you do <br>Yeah, they were all yellow</p>
+          <p class="b2">I came along <br> I wrote a song for you <br> And all the things you do <br> And all the things you do </p>
+          <p class="b3">So then I took my turn <br>So then I took my turn <br> And it was all yellow</p>
+          <p class="b4">Your skin, oh yeah, your skin and bones <br> (Ooh) turn into something beautiful <br> (Ah) and you know, you know I love you so <br> You know I love you so</p>
+          <p class="b5">I swam across <br> I jumped across for you <br> Oh, what a thing to do <br> 'Cause you were all yellow </p>
+          <p class="b6">I drew a line<br>I drew a line for you <br> Oh, what a thing to do <br> And it was all yellow</p>
+          <p class="b7">And your skin, oh yeah, your skin and bones<br>(Ooh) turn into something beautiful <br> (Ah) and you know, for you, I'd bleed myself dry <br> For you, I'd bleed myself dry</p>
+          <p class="b8">It's true<br>Look how they shine for you <br> Look how they shine for you<br> Look how they shine for... <br> Look how they shine for you <br>Look how they shine for you <br> Look how they shine</p>
+          <p class="b9">Look at the stars <br>Look how they shine for you <br> And all the things that you do </p>
+     </div>
+<script>
+     function home(){window.location="coldplay.html"}
+     function next(){window.location="amessage.html"};
+</script>
+</body>
+</html>

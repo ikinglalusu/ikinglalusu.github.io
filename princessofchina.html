@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Princess of China Lyrics</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+     body{
+          background-color: bisque;
+     }
+     .btn{
+          width: 90px;
+          height: 30px;
+          left: 10px;
+          position: absolute;
+          margin-left: 10px;
+          top: 30px;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid bisque;
+          border-radius: 10px;
+     }
+     .btn::before{
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 500%;
+          background: conic-gradient(
+               #fd004c,
+               #fe9000,
+               #fff020,
+               #3edf4b,
+               #3363ff,
+               #b102b7,
+               #fd004c
+          );
+          left: -25%;
+          top: -80%;
+          animation: spin 2s infinite linear ;
+     }
+     .btn::after{
+          content: "Home";
+          position: absolute;
+          background: bisque;
+          height: 80%;
+          width: 90%;
+          left: 5%;
+          top: 10%;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 1000;
+          display: grid;
+          place-items: center;
+          border-radius: 5px;
+          
+     }
+     @keyframes spin{
+          100%{
+               transform: rotate(360deg);
+          }
+     }
+
+     .btn:hover{
+          transform: scale(110%);
+          transition: cubic-bezier(0.215, 0.610, 0.355, 1)ease-in-out;
+          box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, .7);
+     }
+     .btn1{
+          border-radius: 10px;
+          width: 90px;
+          height: 30px;
+          right: 10px;
+          position: absolute;
+          margin-right: 10px;
+          top: 30px;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid bisque;
+     }
+     .btn1::before{
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 500%;
+          background: conic-gradient(
+               #fd004c,
+               #fe9000,
+               #fff020,
+               #3edf4b,
+               #3363ff,
+               #b102b7,
+               #fd004c
+          );
+          left: -25%;
+          top: -80%;
+          animation: spinn 2s infinite linear ;
+     }
+     .btn1::after{
+          content: "Next";
+          border-radius: 5px;
+          position: absolute;
+          background: bisque;
+          height: 80%;
+          width: 90%;
+          left: 5%;
+          top: 10%;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 1000;
+          display: grid;
+          place-items: center;
+          
+     }
+     @keyframes spinn{
+          100%{
+               transform: rotate(-360deg);
+          }
+     }
+     .btn1:hover{
+          transform: scale(110%);
+          transition: cubic-bezier(0.215, 0.610, 0.355, 1)ease-in-out;
+          box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, .7);
+     }
+     .judul{
+          text-align: center;
+          background-color: rgb(212, 178, 130);
+          background-color: burlywood;
+          color: white;
+          height: 100px;
+          width: 100%;
+          text-align: center;
+          font-weight: bold;
+          border-radius: 5px;
+          border-width: 2px;
+          border-style: solid;
+          margin-top:100px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin-bottom: 500px;
+          padding-top: 50px;
+     }
+
+     .b1{
+          color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 10px;
+          padding-top: 50px;
+          border-style: solid;
+          border-width: 2px;
+          border-bottom: none;
+          border-radius: 20px 20px 0 0;
+     }
+     .b2, .b3, .b4, .b5, .b6, .b7, .b8{color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 10px;
+          border-width: 2px;
+          border-style: solid;
+          border-bottom: none;
+          border-top: none;
+     }
+     .b9{
+          color: white;
+          background-color:  rgb(212, 178, 130);
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          padding-bottom: 50px;
+          border-style: solid;
+          border-width: 2px;
+          border-top: none;
+          border-radius: 0 0 20px 20px;
+     }
+</style>
+<body>
+     <div type="button" class="btn" onclick="home()"></div>
+     <div type="button" class="btn1" onclick="next()"></div>
+     <div class="header">
+          <h1 class="judul">Princess of China Lyrics Song </h1>
+     </div>
+     <div class="lyrics">
+          <p class="b1">Oh, oh-oh-oh, oh-oh-oh, oh-oh-oh</p>
+          <p class="b2">Once upon a time somebody ran <br> Somebody ran away saying fast as I can <br> I got to go <br> I got to go <br> Once upon a time we fell apart <br> You're holding in your hands the two halves of my heart <br> Oh-oh, oh-oh-oh</p>
+          <p class="b3">Oh, oh-oh-oh, oh-oh-oh, oh-oh-oh</p>
+          <p class="b4">Once upon a time we burned bright <br> Now all we ever seem to do is fight <br> On and on<br> And on, and on, and on</p>
+          <p class="b5">Once upon a time on the same side<br>Once upon a time on the same side, in the same game <br> Now why'd you have to go? <br> Have to go and throw water on my flame</p>
+          <p class="b6">I could have been a princess, you'd be a king <br>Could've had a castle and worn a ring <br>But no, you let me go <br> I could have been a princess, you'd be a king <br> Could've had a castle and worn a ring <br> But no, you let me go</p>
+          <p class="b7">You stole my star <br> La, la, la, la, la, la, la, la <br> La, la, la, la, la, la, la, la <br> La, la, la, la <br> You stole my star <br> La, la, la, la, la, la, la, la</p>
+          <p class="b8">Oh, oh-oh-oh, oh-oh-oh, oh-oh-oh <br> Oh, oh-oh-oh, oh-oh-oh, oh-oh-oh</p>
+          <p class="b9">'Cause you really hurt me <br>No, you really hurt me <br> 'Cause you really hurt me <br> No, you really hurt me <br>'Cause you really hurt me <br>Oh, you really hurt me <br> 'Cause you really hurt me <br> Oh, you really hurt me </p>
+     </div>
+<script>
+     function home(){window.location="coldplay.html"};
+     function next(){window.location="etiaw.html"};
+</script>
+</body>
+</html>
